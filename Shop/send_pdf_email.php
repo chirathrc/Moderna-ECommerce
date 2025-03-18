@@ -28,14 +28,14 @@ if (!empty($_FILES["invoice"]["tmp_name"]) && !empty($_POST["orderID"])) {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'chirathrc@gmail.com';
-        $mail->Password = 'fykn dosv trtz xbul';
+        $mail->Username = 'abc@gmail.com';
+        $mail->Password = '';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;  // Correct port for STARTTLS
 
         //Recipients
-        $mail->setFrom('chirathrc@gmail.com', 'Invoice Details');
-        $mail->addReplyTo('chirathrc@gmail.com', 'Invoice Details');
+        $mail->setFrom('abc@gmail.com', 'Invoice Details');
+        $mail->addReplyTo('abc@gmail.com', 'Invoice Details');
         $mail->addAddress($user['email']);
         $mail->addStringAttachment($pdfData, $filename);
 
