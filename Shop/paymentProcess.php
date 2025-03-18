@@ -83,7 +83,7 @@ if (isset($_POST['pId']) && isset($_POST['qty'])) {
 
 // Initialize variables for payment data
 $merchantId = "1225753"; // Replace with your sandbox Merchant ID
-$merchantSecret = "MzM2NzYxNjY2ODE1MDQyMDQ2MTYxNzk2Njg3MDQ5MzU5Mzc0MDI0Mg=="; // Replace with your sandbox Merchant Secret
+$merchantSecret = ""; // Replace with your sandbox Merchant Secret
 $items = "";
 $netTotal = 0;
 $currency = "LKR";
