@@ -64,12 +64,12 @@ if (empty($FN)) {
         $mail->IsSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'chirathrc@gmail.com';
-        $mail->Password = 'qzqt mdqf niql ektn';
+        $mail->Username = 'your email';
+        $mail->Password = '';
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
-        $mail->setFrom('chirathrc@gmail.com', 'Email Verification');
-        $mail->addReplyTo('chirathrc@gmail.com', 'Email Verification');
+        $mail->setFrom('add email', 'Email Verification');
+        $mail->addReplyTo('add email', 'Email Verification');
         $mail->addAddress($email);
         $mail->isHTML(true);
         $mail->Subject = 'BELLE Online Store Email Verification Code';
